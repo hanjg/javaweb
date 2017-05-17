@@ -1,0 +1,1576 @@
+
+
+
+
+
+
+/* --------------------------------------------- */
+/*  Global Jive Integrated Server Stylesheet     */
+/* --------------------------------------------- */
+
+/* ---------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------- */
+/*  Styles for HTML elements                                                                      */
+/* ---------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------- */
+
+BODY {
+    background-color : #ffffff;
+    font-size : 100%;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+}
+BODY, DIV, P, TD, TH {
+    font-family : arial,helvetica,sans-serif;
+    font-size : 9pt;
+    color : #000000;
+}
+PRE {
+    font-size : 10pt;
+    font-family : courier new, monospaced;
+    margin : 0px;
+}
+FIELDSET LEGEND {
+    color : #000000;
+}
+A {}
+A:link {
+    color : #003399;
+}
+A:visited {
+    color : #003399;
+}
+A:hover {
+    color : #99ccff;
+    text-decoration : none;
+}
+A:active {
+    color : #99ccff;
+}
+
+/* ---------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------- */
+/*  Custom styles - used in many pages                                                            */
+/* ---------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------- */
+
+.jive-page-title {
+    font-size : 12pt;
+    font-weight : bold;
+}
+.jive-guest {
+    font-style : italic !important;
+}
+.nobreak {
+    white-space: nowrap;
+}
+
+/* --------------------------------------------- */
+/*  Account Box                                  */
+/* --------------------------------------------- */
+
+.jive-accountbox {
+    width : 200px;
+}
+.jive-accountbox .jive-icon {
+    padding : 3px;
+}
+.jive-accountbox .jive-icon-label {
+    padding : 3px;
+    white-space : nowrap;
+    padding-right : 1em;
+    font-size : 9pt;
+    font-family : verdana,arial,sans-serif;
+}
+.jive-accountbox .jive-icon-label .jive-active {
+    font-weight : bold;
+}
+.jive-accountbox THEAD TH {
+    text-align : left;
+    border-bottom : 1px #cccccc solid;
+}
+
+/* --------------------------------------------- */
+/*  Buttons                                      */
+/* --------------------------------------------- */
+
+.jive-buttons .jive-icon {
+    padding : 3px;
+}
+.jive-buttons .jive-icon-label {
+    padding : 3px;
+    white-space : nowrap;
+    padding-right : 1em;
+    font-size : 9pt;
+    font-family : verdana,arial,sans-serif;
+}
+#jive-categorypage .jive-buttons {
+    padding-bottom : 3px;
+}
+
+/* --------------------------------------------- */
+/*  Search Forms                                 */
+/* --------------------------------------------- */
+
+.jive-search-form TR {
+    vertical-align : top;
+}
+.jive-search-form .jive-search-label {
+    padding-top : 4px;
+}
+.jive-search-form LABEL, .jive-search-form INPUT, .jive-search-form SELECT {
+    font-size : 9pt;
+    font-family : verdana,arial,sans-serif;
+}
+.jive-search-form TD {
+    padding : 3px;
+}
+#jive-searchpage .jive-search-form TD {
+    padding : 5px;
+}
+.jive-search-results .jive-table THEAD TH {
+    text-align : left;
+}
+.jive-search-results {
+    margin-bottom : 3px;
+}
+.jive-search-results .jive-search-noresults {
+    padding : 1em;
+    font-style : italic;
+}
+#jive-searchpage OL {
+    padding-left : 2em;
+    margin-left : 0px;
+}
+#jive-searchpage .jive-result-info {
+    font-size : 9pt;
+    font-family : verdana,arial,sans-serif;
+    color : #666;
+}
+#jive-searchpage .jive-body {
+    padding : 0em 0em 0em 0.5em;
+    margin-bottom : 1.5em;
+}
+#jive-searchpage .jive-result-link {
+    font-weight : bold;
+}
+.jive-search-results .jive-table SELECT {
+    font-size : 9pt;
+    font-family : verdana,arial,sans-serif;
+    font-weight : normal;
+}
+.jive-search-term {
+    background-color : #ff0;
+    color : #000000;
+    font-weight : bold;
+}
+
+/* --------------------------------------------- */
+/*  Error styles                                 */
+/* --------------------------------------------- */
+
+.jive-error-message .jive-icon {
+    padding-right : 6px;
+}
+.jive-error-message .jive-icon-label, .jive-error-text {
+    font-family : verdana,arial,sans-serif;
+    font-size : 9pt;
+    color : #f00;
+}
+.jive-error-message .jive-icon-label {
+    padding-top : 1px;
+}
+
+/* --------------------------------------------- */
+/*  Success styles                               */
+/* --------------------------------------------- */
+
+.jive-success-message .jive-icon {
+    padding-right : 6px;
+}
+.jive-success-message .jive-icon-label, .jive-success-text {
+    font-family : verdana,arial,sans-serif;
+    font-size : 9pt;
+    color : #090;
+}
+.jive-success-message .jive-icon-label {
+    padding-top : 1px;
+}
+
+/* --------------------------------------------- */
+/*  Info styles                                  */
+/* --------------------------------------------- */
+
+.jive-infobox TABLE {
+    border : 1px #ccc solid;
+    background-color : #eee;
+}
+.jive-infobox LI {
+    list-style-image : url(images/arrow-bullet-10x10.gif);
+    margin-left : 2em;
+}
+.jive-infobox TD, .jive-infobox TH {
+    font-size : 9pt;
+    font-family : verdana,arial,sans-serif;
+    padding : 3px;
+}
+.jive-infobox UL {
+    padding : 0px;
+    margin : 0px;
+    padding-top : 0.2em;
+}
+.jive-infobox .unans, .jive-infobox .callout, .unans {
+    font-weight : bold;
+    color : #f00;
+}
+.jive-infobox .ans, .ans {
+    font-weight : bold;
+    color : #060;
+}
+
+/* --------------------------------------------- */
+/*  Footer                                       */
+/* --------------------------------------------- */
+
+#jive-footer TD {
+    font-size : 0.7em;
+    font-weight : bold;
+    text-align : center;
+    border-top : 1px #cccccc solid;
+    padding-top : 5px;
+}
+#jive-footer TD A {
+    color : #666;
+    text-decoration : none;
+}
+#jive-footer TD A:hover {
+    text-decoration : underline;
+}
+
+/* --------------------------------------------- */
+/*  Breadcrumbs                                  */
+/* --------------------------------------------- */
+
+.jive-breadcrumbs {
+    font-family : verdana,arial,sans-serif;
+    font-size : 9pt;
+    color : #003399;
+    font-weight : bold;
+}
+.jive-breadcrumbs A {
+    font-weight : normal;
+    color : #003399;
+}
+.jive-breadcrumbs A:hover {
+    color : #99ccff;
+}
+.jive-breadcrumbs .jive-last-link {
+    text-decoration : none;
+}
+
+/* --------------------------------------------- */
+/*  Paginators                                   */
+/* --------------------------------------------- */
+
+.jive-paginator, .jive-paginator A {
+    font-family : arial,helvetica,sans-serif;
+    font-size : 9pt;
+}
+.jive-paginator, .jive-paginator A {
+    font-weight : bold;
+}
+.jive-message-list .jive-paginator, .jive-message-list .jive-paginator A {
+    font-family : verdana,arial,sans-serif;
+    font-size : 9pt;
+    font-weight : bold;
+}
+.jive-paginator A {
+    text-decoration : none;
+    border : 1px #fff solid;
+}
+.jive-paginator A:hover {
+    border : 1px #ccc solid;
+    color : #000;
+    background-color : #ffc;
+    text-decoration : none;
+}
+.jive-paginator .jive-current {
+    color : #000;
+    background-color : #eee;
+    border : 1px #ccc solid;
+    text-decoration : none;
+}
+.jive-message-list-footer, .jive-message-list-footer TD, .jive-message-list-footer A,
+.jive-message-list-footer .jive-paginator-bottom, .jive-message-list-footer .jive-paginator-bottom A
+{
+    font-family : verdana,arial,sans-serif;
+    font-size : 9pt;
+    font-weight : normal;
+}
+.jive-thread-row-paginator, .jive-thread-row-paginator A {
+    font-family : verdana,arial,sans-serif;
+    font-size : 9pt;
+    font-weight : normal;
+}
+.jive-thread-row-paginator {
+    padding-left : 1em;
+}
+
+/* --------------------------------------------- */
+/*  Descriptions, legends                        */
+/* --------------------------------------------- */
+
+.jive-description, .jive-legend .jive-icon-label {
+    font-family : verdana,arial,sans-serif;
+    font-size : 9pt;
+}
+.jive-legend .jive-icon-label {
+    padding-left : 5px;
+}
+.jive-legend .jive-icon {
+    padding-top : 2px;
+    padding-bottom : 2px;
+}
+
+/* --------------------------------------------- */
+/*  Tables                                       */
+/* --------------------------------------------- */
+
+.jive-table {
+    width : 100%;
+}
+.jive-table TD, .jive-table TH {
+    padding : 3px;
+}
+.jive-table TD {
+    padding : 3px;
+    border-width : 0px 1px 1px 0px;
+    border-style : solid;
+    border-color : #cccccc;
+}
+.jive-table TABLE TABLE, .jive-table TABLE TABLE TD, .jive-table TABLE TABLE TH {
+    border-width : 0px;
+}
+.jive-table THEAD TH {
+    font-family : verdana,arial,sans-serif;
+    font-size : 9pt;
+    font-weight : bold;
+    text-align : center;
+    /*background-color : #6699cc;*/
+    background-color: #008899;
+    color : #ffffff;
+    border-top : 1px #336699 solid;
+    border-bottom : 1px #336699 solid;
+}
+.jive-table THEAD .jive-first {
+    border-left : 1px #666 solid;
+}
+.jive-table THEAD .jive-last {
+    border-right : 1px #666 solid;
+}
+.jive-table THEAD .jive-first {
+    border-left : 1px #666 solid;
+}
+.jive-table THEAD .jive-last {
+    border-right : 1px #666 solid;
+}
+.jive-table THEAD .jive-first-last {
+    border-left : 1px #666 solid;
+    border-right : 1px #666 solid;
+}
+.jive-table TBODY .jive-first-last, .jive-table TFOOT .jive-first-last {
+    border-left : 1px #cccccc solid;
+    border-right : 1px #cccccc solid;
+}
+.jive-table TBODY .jive-first, .jive-table TBODY .jive-category-name, .jive-table TFOOT .jive-first,
+#jive-usersettingspage .jive-table TBODY .jive-label,
+#jive-guestsettingspage .jive-table TBODY .jive-label,
+#jive-profilepage .jive-table TBODY .jive-label,
+.jive-watchlist .jive-watch-message
+{
+    border-left : 1px #cccccc solid;
+}
+.jive-table TFOOT TD {
+    font-family : verdana,arial,sans-serif;
+    font-size : 9pt;
+    background-color : #ddd;
+    border-top : 1px #aaa solid;
+}
+.jive-table .jive-odd {
+    background-color : #eeeeee;
+}
+.jive-table .jive-even {
+    background-color : #ffffff;
+}
+.jive-table TFOOT INPUT, .jive-table TFOOT SELECT {
+    font-family : verdana,arial,sans-serif;
+    font-size : 9pt;
+}
+.jive-table .jive-active {
+    background-color : #ffc;
+}
+.jive-table .jive-active TD, .jive-table .jive-active TH {
+    border-bottom : 1px #999 solid;
+}
+.jive-form-table TH, .jive-form-table TD {
+    padding : 3px;
+}
+.jive-table .jive-messagebox {
+    border-top : 1px #cccccc solid;
+}
+.jive-messagebox-this {
+    background-color: #ffe;
+}
+.jive-messagebox-parent {
+    background-color: #fee;
+}
+.jive-messagebox-child {
+    background-color: #efe;
+}
+#jive-reply-tree .jive-table .jive-current TD {
+    background-color : #ffffcc;
+    vertical-align : middle;
+}
+#jive-reply-tree .jive-table .jive-current A {
+    font-weight : bold;
+}
+
+/* --------------------------------------------- */
+/*  Portlet Boxes                                */
+/* --------------------------------------------- */
+
+.jive-portlet-box, .jive-portlet-info-box {
+    margin-bottom : 1em;
+}
+.jive-portlet-box {
+    border : 1px #cccccc solid;
+}
+.jive-portlet-box THEAD {
+    padding : 0px;
+}
+.jive-portlet-box THEAD TH, .jive-portlet-box TBODY TD {
+    font-family : verdana,arial,sans-serif;
+    font-size : 9pt;
+    padding : 3px;
+}
+.jive-portlet-box THEAD TH {
+    text-align : left;
+    font-weight : bold;
+    color : #000000;
+    background-color : #eeeeee;
+    border-bottom : 1px #cccccc solid;
+}
+.jive-portlet-box TBODY TD {
+    vertical-align : top;
+}
+.jive-portlet-box LABEL {
+    padding-top : 2px;
+}
+.jive-portlet-box .jive-status-legend-groups .jive-first-row,
+.jive-portlet-box .jive-status-legend-points .jive-first-row {
+    border-top : 1px #cccccc solid;
+}
+
+/* --------------------------------------------- */
+/*  Category, Forum and Thread lists             */
+/* --------------------------------------------- */
+
+.jive-forum-list .jive-table .jive-category-name {
+    font-family : arial, helvetica, sans-serif;
+    font-size : 10pt;
+    font-weight : bold;
+    background-color : #eee;
+    color : #000;
+}
+.jive-category-name .jive-description {
+    font-weight : normal;
+}
+.jive-forum-list .jive-forum-name A {
+    font-weight : bold;
+}
+.jive-forum-list .jive-forum-name .jive-description A {
+    font-weight : normal;
+}
+.jive-forum-list .jive-table .jive-category-name A {
+    color : #000;
+    text-decoration : none;
+}
+.jive-forum-list .jive-table .jive-category-name A:hover {
+    text-decoration : underline;
+}
+.jive-forum-list .jive-table .jive-even, .jive-forum-list .jive-table .jive-odd {
+    background-color : #fff;
+}
+.jive-forum-list .jive-table .jive-view-count,
+.jive-forum-list .jive-table .jive-msg-count,
+.jive-thread-list .jive-table .jive-view-count,
+.jive-thread-list .jive-table .jive-msg-count {
+    text-align : center;
+}
+.jive-author {
+    font-family : verdana,arial,sans-serif;
+    font-size : 9pt;
+}
+.jive-author-pageuser {
+    font-weight : bold;
+}
+.jive-author-fullname {
+    color : #666;
+}
+.jive-thread-list THEAD .jive-forum-name, .jive-thread-list THEAD .jive-date {
+    color : #fff;
+}
+.jive-forum-list .jive-table .jive-last-post,
+.jive-thread-list .jive-table .jive-last-post,
+.jive-table .jive-date {
+    font-family : verdana,arial,sans-serif;
+    font-size : 9pt;
+}
+.jive-thread-list .jive-forum-name {
+    font-family : verdana,arial,sans-serif;
+    font-size : 9pt;
+    padding-left : 0.5em;
+    padding-right : 0.5em;
+}
+
+/* --------------------------------------------- */
+/*  Message list                                 */
+/* --------------------------------------------- */
+
+.jive-message-list {
+    margin-bottom : 0.5em;
+}
+.jive-message-list .jive-table THEAD TH {
+    text-align : left;
+    font-weight : normal;
+}
+.jive-message-list .jive-table THEAD TH A {
+    color : #ffffff;
+    font-weight : normal;
+}
+.jive-message-list .jive-table .jive-paginator A {
+    border : 1px #6699cc solid;
+}
+.jive-message-list .jive-table .jive-paginator A:hover {
+    background-color : #ffc;
+    border : 1px #336699 solid;
+    color : #000;
+}
+.jive-message-list .jive-table .jive-paginator .jive-current {
+    border : 1px #336699 solid;
+    background-color : #eee;
+    color : #000;
+}
+.jive-message-list .jive-table .jive-subject {
+    font-weight : bold;
+}
+.jive-status-level-image {
+    padding : 1px;
+}
+
+/* --------------------------------------------- */
+/*  Info and errors                              */
+/* --------------------------------------------- */
+
+.jive-info-message {
+    margin-bottom : 1em;
+}
+.jive-info-message TBODY TD {
+    font-family : verdana,arial,sans-serif;
+    font-size : 9pt;
+}
+.jive-info-message TBODY TD A {
+    font-weight : normal;
+}
+.jive-info-message .jive-icon {
+    padding-right : 6px;
+}
+
+/* --------------------------------------------- */
+/*  Search                                       */
+/* --------------------------------------------- */
+
+.jive-search-result .jive-hilite {
+    background-color : #ff0;
+    font-weight : bold;
+}
+
+/* --------------------------------------------- */
+/*  Search                                       */
+/* --------------------------------------------- */
+
+.jive-faq-answer {
+    font-weight : bold;
+}
+
+/* --------------------------------------------- */
+/*  Login                                        */
+/* --------------------------------------------- */
+
+.jive-login-form {
+    width : 60%;
+}
+.jive-login-form .jive-table .jive-label {
+    width : 30%;
+    text-align : right;
+    padding-right : 1em;
+}
+.jive-login-form TABLE {
+    border : 1px #cccccc solid;
+}
+.jive-login-form TD {
+    border-width : 0px;
+}
+
+/* --------------------------------------------- */
+/*  Profiles                                     */
+/* --------------------------------------------- */
+
+.jive-profile .jive-table THEAD TH {
+    text-align : left;
+}
+
+/* --------------------------------------------- */
+/*  Avatars                                      */
+/* --------------------------------------------- */
+
+.jive-avatar {
+    margin-top : 1px;
+    border : 1px #cccccc solid;
+}
+.jive-avatar-box {
+    padding : 0.5em 2em 0.5em 0em;
+}
+.jive-avatar-table IMG {
+    border  : 1px #cccccc solid;
+}
+.jive-avatar-table IMG:hover {
+    border  : 1px #000 solid;
+}
+
+/* --------------------------------------------- */
+/* Polls                                         */
+/* --------------------------------------------- */
+
+#jive-pollpage .jive-table {
+    width : 400px;
+}
+#jive-pollpage .jive-table TABLE {
+    width : 100%;
+}
+.jive-poll-results .jive-total TD {
+    border-top : 1px #cccccc solid;
+}
+.jive-poll-results .jive-label {
+    font-weight : bold;
+}
+
+/* ---------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------- */
+/*  Page styles - these are styles for specific pages which extend the ones                       */
+/*  defined above.                                                                                */
+/* ---------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------- */
+
+/* --------------------------------------------- */
+/*  Styles for integrated front page             */
+/* --------------------------------------------- */
+
+#jive-support-fp THEAD TH, #jive-support-fp THEAD TH A {
+    text-align : left;
+    font-weight : bold !important;
+    font-size : 11pt;
+    color : #000;
+    text-decoration : none;
+}
+#jive-support-fp THEAD .jive-fp-section {
+    padding : 3px;
+    padding-left : 6px;
+}
+#jive-support-fp THEAD TH A:hover {
+    text-decoration : underline;
+}
+#jive-support-fp .jive-support-subsect THEAD TH {
+    font-size : 10pt;
+    font-weight : normal;
+}
+#jive-support-fp .jive-support-subsect {
+    padding-left : 25px;
+    padding-right : 3px;
+}
+#jive-support-fp .jive-forum-list LI {
+    list-style-image: url("images/unread-16x16.gif");
+}
+#jive-support-fp .jive-cat-list {
+    list-style-type : none;
+    padding : 0;
+    margin : 0;
+}
+#jive-support-fp .jive-cat-list LI {
+    background: url("images/category-16x16.gif") left top no-repeat;
+    padding : 0 0 0.75em 20px;
+}
+#jive-support-fp .jive-read {
+    background: url("images/read-16x16.gif") left top no-repeat !important;
+}
+#jive-support-fp .jive-unread {
+    background: url("images/unread-16x16.gif") left top no-repeat !important;
+}
+#jive-support-fp .jive-updated {
+    background: url("images/updated-16x16.gif") left top no-repeat !important;
+}
+#jive-support-fp .jive-none {
+    background : none !important;
+}
+
+/* --------------------------------------------- */
+/*  Extra front page styles                      */
+/* --------------------------------------------- */
+
+#jive-frontpage .jive-search-form TR {
+    vertical-align : middle;
+}
+
+/* --------------------------------------------- */
+/*  Extra post page styles                       */
+/* --------------------------------------------- */
+
+#jive-postpage .jive-fieldset DIV {
+    padding : 0.5em;
+    margin : 0px;
+}
+.jive-fieldset {
+    border : 1px #cccccc solid;
+    -moz-border-radius : 3px;
+    padding : 3px;
+}
+#jive-postpage .jive-attach-item {
+    font-size : 11px;
+}
+#jive-postpage .jive-rating-buttons {
+    white-space : nowrap;
+}
+#jive-post-helpbox {
+    padding : 0px;
+    margin-left : 1em;
+    border : 1px #cccccc solid;
+    width : 200px;
+}
+#jive-post-helpbox TH {
+    background-color : #ddd;
+    text-align : left;
+    border-bottom : 1px #cccccc solid;
+}
+#jive-post-helpbox TD, #jive-post-helpbox TH {
+    padding : 3px;
+    font-family : verdana,arial,sans-serif;
+    font-size : 9pt;
+}
+#jive-post-bodybox {
+    border : 1px #cccccc solid;
+    -moz-border-radius : 3px;
+    padding : 3px;
+    background-color : #eee;
+}
+#jive-postpage TEXTAREA {
+    font-family : arial,helvetica,sans-serif;
+    font-size : 9pt;
+}
+
+/* --------------------------------------------- */
+/*  Help page styles                             */
+/* --------------------------------------------- */
+
+#jive-helppage LI {
+    padding-bottom : 0.5em;
+}
+
+/* --------------------------------------------- */
+/*  Ratings (correct/helpful)                    */
+/* --------------------------------------------- */
+
+.jive-rate-button {
+    font-size : 8pt;
+    font-family : verdana;
+    border : 1px #aaa solid;
+    font-weight : normal;
+    padding : 1px;
+    margin : 1px;
+    -moz-border-radius : 3px;
+}
+.jive-helpful-rating TD {
+    font-family : verdana,arial,sans-serif;
+    font-size : 9pt;
+}
+
+/* --------------------------------------------- */
+/*  Extra forum page styles                      */
+/* --------------------------------------------- */
+
+#jive-forumpage .jive-search-form FORM {
+    display : inline;
+}
+
+/* --------------------------------------------- */
+/*  Extra portlet styles                         */
+/* --------------------------------------------- */
+
+#jive-frontpage .jive-portlet-box,
+#jive-int-frontpage .jive-portlet-box,
+#jive-categorypage .jive-portlet-box,
+#jive-forumpage .jive-portlet-box,
+#jive-flatpage .jive-portlet-box,
+#jive-threadedpage .jive-portlet-box,
+#jive-treepage .jive-portlet-box,
+#jive-rsspage .jive-portlet-box,
+.jive-portlet-info-box
+{
+    margin-left : 1em;
+}
+
+/* --------------------------------------------- */
+/*  Extra thread list styles                     */
+/* --------------------------------------------- */
+
+#jive-forumpage .jive-thread-list .jive-table TR, #jive-categorypage .jive-thread-list .jive-table TR {
+    vertical-align : middle;
+}
+
+/* --------------------------------------------- */
+/*  Spell checking styles                        */
+/* --------------------------------------------- */
+
+.jive-spell-error-current, .jive-spell-error {
+    color : #f00;
+    border-bottom : #f00 2px dotted;
+}
+.jive-spell-error-current {
+    background-color : #eee;
+    font-weight : bold;
+}
+#jive-spellpage .jive-table .jive-spell-button {
+    background-color : #eee;
+    font-size : 8pt;
+    font-family : verdana,arial,helvetica,sans-serif;
+    padding : 2px 6px 2px 6px;
+}
+
+
+/* --------------------------------------------- */
+/*  Quote original styles                        */
+/* --------------------------------------------- */
+
+.jive-quoteheader {
+    font-weight : bold;
+    width : 90%;
+    margin-left : 15px;
+}
+.jive-quote {
+    border : #d1d7dc 1px solid;
+    /* font-size : 11px; */
+    color : #444;
+    /* line-height : 125%; */
+    /* font-family : Verdana, Arial, Helvetica, sans-serif; */
+    background-color : #fafafa;
+    width : 90%;
+    margin-left : 15px;
+}
+
+
+/* --------------------------------------------- */
+/*  Extra settings and watch page styles         */
+/* --------------------------------------------- */
+
+.jive-settings .jive-table TH, .jive-watchlist .jive-table TH {
+    text-align : left;
+}
+.jive-settings .jive-table .jive-label {
+    width : 30%;
+}
+.jive-watchlist .jive-watchlist-internal {
+    /*
+    margin : 10px;
+    margin-bottom : 20px;
+    */
+    width : 100%;
+}
+.jive-watchlist .jive-watchlist-internal TH {
+    background-color : #eee;
+    border-width : 1px 0px 1px 1px;
+    border-color : #cccccc;
+    border-style : solid;
+    color : #000;
+}
+.jive-watchlist .jive-watchlist-internal .cn {
+    border-right : 1px  #cccccc solid;
+}
+.jive-watchlist .jive-watchlist-internal .c1
+{
+    border-left : 1px #cccccc solid;
+}
+.jive-watchlist .jive-watchlist-internal TBODY TR {
+    background-color : #eee;
+    border-width : 0px 1px 0px 1px;
+    border-color : #cccccc;
+    border-style : solid;
+}
+.jive-watchlist .jive-watchlist-internal .jive-odd,
+.jive-watchlist .jive-watchlist-internal .jive-even
+{
+    background-color : #fff;
+}
+.jive-watchlist .jive-watchlist-internal TBODY TD {
+    border-bottom : 1px #cccccc solid;
+}
+.jive-watchlist .jive-watchlist-internal TFOOT TD {
+    background-color : #fff;
+}
+.jive-watchlist .jive-watch-message {
+    padding : 10px;
+}
+
+/* --------------------------------------------- */
+/*  Private Messages                             */
+/* --------------------------------------------- */
+
+#jive-pmpage .jive-info-message {
+    padding : 3px;
+}
+#jive-pmpage .jive-mark-buttons INPUT, #jive-pmpage .jive-mark-buttons SELECT, #jive-pmpage .jive-jump-box SELECT {
+    font-size : 9pt;
+    font-family : verdana,arial,sans-serif;
+}
+#jive-pmpage .jive-pm-msg-row TD {
+    border-bottom : 1px #cccccc solid;
+}
+#jive-pmpage .jive-pm-msg-row-sel TD {
+    border-bottom : 1px #999 solid;
+    background-color : #ffc;
+}
+#jive-pm-folder-box TH, #jive-pm-folder-box TD {
+    font-size : 8pt;
+    font-family : verdana;
+}
+#jive-pm-folder-box {
+    margin-right : 8px;
+}
+#jive-pm-folder-box TABLE {
+    border : 1px #cccccc solid;
+}
+#jive-pm-folder-box TH {
+    text-align : left;
+    font-weight : bold;
+    background-color : #eee;
+    border-bottom : 1px #cccccc solid;
+}
+#jive-pm-folder-box .jive-pm-folder-total TD {
+    border-top : 1px #cccccc solid;
+}
+.jive-pm-folder-warn {
+    color : #c30;
+    font-weight : bold;
+}
+.jive-pm-folder-bar, .jive-pm-folder-bar TABLE {
+    border : 1px #666 solid;
+    padding : 0px;
+    margin : 0px;
+}
+#jive-pmpage .jive-pm-list TFOOT {
+    border-top : 1px #cccccc solid;
+}
+#jive-pmpage .jive-pm-list TFOOT TD {
+    background-color : #eee;
+}
+#jive-pmpage .jive-table .jive-paginator A {
+    border : 1px #eee solid;
+}
+#jive-pmpage .jive-table .jive-paginator A:hover {
+    background-color : #ffc;
+    border : 1px #336699 solid;
+    color : #000;
+}
+#jive-pmpage .jive-table .jive-paginator .jive-current {
+    border : 1px #666 solid;
+    background-color : #eee;
+    color : #000;
+}
+#jive-folder-form {
+    margin-right : 10px;
+}
+#jive-folder-form TABLE {
+    border : 1px #cccccc solid;
+}
+#jive-folder-form TD, #jive-folder-form TH, #jive-folder-form INPUT, #jive-folder-list INPUT {
+    font-size : 9pt;
+    font-family : verdana,arial,sans-serif;
+}
+#jive-folder-form TH {
+    background-color : #eee;
+    text-align : left;
+}
+#jive-folder-list TABLE {
+    border : 1px #cccccc solid;
+}
+#jive-folder-list TH, #jive-folder-list TD {
+    font-size : 9pt;
+    font-family : verdana,arial,sans-serif;
+}
+#jive-folder-list TH {
+    background-color : #eee;
+    text-align : left;
+}
+#jive-folder-list TD {
+    border-top : 1px #cccccc solid;
+}
+.jive-pm-box .jive-table .jive-body {
+    padding : 12px;
+}
+.jive-pm-box .jive-table .jive-label {
+    white-space : nowrap;
+    width : 75px;
+}
+.jive-pm-box .jive-table THEAD TH {
+    text-align : left;
+}
+#jive-pmviewpage .jive-nextprev {
+    text-align : right;
+    font-size : 9pt;
+    font-family : verdana,arial,sans-serif;
+}
+
+/* --------------------------------------------- */
+/*  Questions                                    */
+/* --------------------------------------------- */
+
+.jive-question-table THEAD TH {
+    border-bottom : 1px #cccccc solid;
+    text-align : left;
+    font-size : 11pt;
+}
+.jive-question-table THEAD TH .paginator {
+    font-size : 9pt;
+    font-family : verdana,arial,sans-serif;
+    font-weight : normal;
+    white-space : nowrap;
+    padding-left : 2em;
+}
+.jive-question-table .jive-thread-name A, #jive-profilepage .jive-recent-msg .jive-thread-name A {
+    font-weight : bold;
+}
+.jive-question-table .info, #jive-profilepage .jive-recent-msg .info {
+    font-size : 9pt;
+    font-family : verdana,arial,sans-serif;
+}
+.jive-question-table .info, #jive-profilepage .jive-recent-msg .info {
+    padding-bottom : 0.5em;
+}
+.jive-question-table .info A, #jive-profilepage .jive-recent-msg .info A {
+    color : #666;
+    white-space : nowrap;
+}
+
+/* --------------------------------------------- */
+/*  Announcements                                */
+/* --------------------------------------------- */
+
+.jive-announce-description {
+    color : #666;
+}
+.jive-announce .jive-announce-edit {
+    float : right;
+    font-family : verdana,arial,sans-serif;
+    font-size : 9pt;
+}
+
+/* --------------------------------------------- */
+/*  DHTML Tree                                   */
+/* --------------------------------------------- */
+
+TABLE .dhtmlTreeStyle {
+    padding : 0px;
+}
+TD .dhtmlTreeStyle {
+    padding : 0px;
+}
+
+/* --------------------------------------------- */
+/*  Category List styles                         */
+/* --------------------------------------------- */
+
+#jive-category-list TH {
+    font-weight : bold;
+    text-align : center;
+    background-color : #ddd;
+    color : #000000;
+}
+#jive-category-list .jive-category-header {
+    font-weight : bold;
+    text-align : left;
+    vertical-align : top;
+    background-color : #ffffff;
+    color : #000000;
+}
+#jive-category-list .jive-icon, #jive-frontpage-category-list .jive-icon {
+    text-align : center;
+}
+#jive-category-list TD .description, #jive-category-list TD .info,
+#jive-frontpage-category-list TD .info
+{
+    font-weight : normal;
+    color : #666;
+    background: transparent;
+}
+#jive-category-list TD .info, #jive-frontpage-category-list TD .info {
+    font-size: 11px;
+}
+#jive-category-list .jive-entry {
+    vertical-align : top;
+}
+.jive-browse-category {
+    font-weight : bold;
+    font-size : 0.9em;
+    color : #600;
+    background: transparent;
+    vertical-align : top;
+}
+.jive-category-header A {
+    text-decoration : none;
+}
+.jive-category-header A:hover, .jive-category-header A:active {
+    text-decoration : underline;
+}
+.jive-category-name {
+    font-size : 1.2em;
+    font-weight : bold;
+}
+.jive-category-sort-bar SELECT {
+    font-size : 9pt;
+    font-family : verdana,arial,sans-serif;
+    font-weight : normal;
+}
+.jive-header-style TH {
+    text-align : left;
+    border-bottom : 1px #cccccc solid;
+    padding-bottom : 6px;
+}
+
+/* --------------------------------------------- */
+/*  Sidebar styles                               */
+/* --------------------------------------------- */
+
+.jive-sidebar-entry {
+    vertical-align : top;
+}
+.jive-sidebar-entry UL {
+    text-indent : 1px;
+}
+
+/* --------------------------------------------- */
+/*  Entry List                                   */
+/* --------------------------------------------- */
+
+.jive-entry-list A {
+}
+.jive-entry-list A:hover {
+}
+.jive-entry-list .jive-name {
+    font-weight : bold;
+}
+.jive-entry-list {
+    background-color : #ffffff;
+    color : #000000;
+}
+
+/* --------------------------------------------- */
+/*  Moderation                                   */
+/* --------------------------------------------- */
+
+.jive-moderate {
+    background-color : #fcc;
+    color : #000000;
+}
+.jive-moderate-link A {
+    font-weight : bold;
+    text-decoration : none;
+}
+.jive-moderate-link A:link {
+    color : #f00;
+    background: transparent;
+}
+.jive-moderate-link A:visited {
+    color : #f00;
+    background: transparent;
+}
+.jive-moderate-link A:hover {
+    color : #f00;
+    background: transparent;
+}
+.jive-moderate-link A:active {
+    color : #f00;
+    background: transparent;
+}
+
+/* --------------------------------------------- */
+/*  Entry                                        */
+/* --------------------------------------------- */
+
+#jive-entry {
+    border-color : #cccccc;
+    border-width : 1px;
+    border-style : solid;
+}
+#jive-entry TH {
+    text-align : left;
+    font-weight : normal;
+    background-color : #eee;
+    color : #000000;
+}
+#jive-entry .jive-entry-text, .jive-entrypart, .jive-entrypart-text, .jive-comment .jive-comment-text {
+    padding : 12px 12px 12px 12px;
+}
+.jive-entry-title {
+    font-size : 1.2em;
+    font-weight : bold;
+}
+#jive-entrypart {
+    border-color : #cccccc;
+    border-width : 1px;
+    border-style : solid;
+}
+.jive-entrypart TH {
+    text-align : left;
+    font-weight : normal;
+    background-color : #eee;
+    color : #000000;
+}
+.jive-comment {
+    border-color : #cccccc;
+    border-width : 1px;
+    border-style : solid;
+}
+.jive-comment TH {
+    text-align : left;
+    font-weight : normal;
+    background-color : #eee;
+    color : #000000;
+}
+.jive-subject {
+    font-weight : bold;
+}
+
+#jive-guieditor {
+    border : 1px #cccccc solid;
+    -moz-border-radius : 3px;
+    padding : 3px;
+    background-color : #eee;
+}
+
+
+/* --------------------------------------------- */
+/*  Timer (not enabled by default)               */
+/* --------------------------------------------- */
+
+.jive-timer {
+    font-family : verdana,arial,sans-serif;
+    font-size : 9pt;
+    color : #999;
+    text-align : center;
+}
+
+/*-- -----------------------------------------------*/
+/*--  Error - Info - Success                        */
+/*-- -----------------------------------------------*/
+
+.jive-error-box {
+    border : 1px #f00 solid;
+    background-color : #fee;
+    -moz-border-radius : 3px;
+    padding : 6px;
+    margin-bottom : 1em;
+    padding-left : 30px;
+    background-image : url("../images/error-16x16.gif");
+    background-repeat : no-repeat;
+    background-position : 6px 6px;
+}
+.jive-info-box {
+    border : 1px #00f solid;
+    background-color : #eef;
+    -moz-border-radius : 3px;
+    padding : 6px;
+    margin-bottom : 1em;
+    padding-left : 30px;
+    background-image : url("../images/info-16x16.gif");
+    background-repeat : no-repeat;
+    background-position : 6px 6px;
+}
+.jive-success-box {
+    border : 1px #0f0 solid;
+    background-color : #efe;
+    -moz-border-radius : 3px;
+    padding : 6px;
+    margin-bottom : 1em;
+    padding-left : 30px;
+    background-image : url("../images/success-16x16.gif");
+    background-repeat : no-repeat;
+    background-position : 6px 6px;
+}
+
+
+/*-- --------------------------------------------- --*/
+/*--  Settings forms                               --*/
+/*-- --------------------------------------------- --*/
+
+.jive-settings-form .jive-table THEAD TH, .jive-settings-form .jive-table TD {
+    text-align : left;
+    border-left : 1px #cccccc solid;
+}
+.jive-settings-form TD {
+    padding : 3px;
+}
+
+/*-- --------------------------------------------- --*/
+/*--  Styles for skill rows                        --*/
+/*-- --------------------------------------------- --*/
+
+.jive-skill-table TD {
+    border-left : 0px !important;
+}
+.jive-skill-row TD {
+    border-bottom : 1px #ccc dotted !important;
+}
+.jive-skill-legend UL {
+    padding : 5px;
+    margin : 0;
+    list-style : none;
+}
+.jive-skill-legend LI {
+    padding-bottom : 0.5em;
+}
+
+/*-- --------------------------------------------- --*/
+/*--  Webwork styles                               --*/
+/*-- --------------------------------------------- --*/
+
+.errorLabel {
+    color : #F00;
+    font-weight:bold;
+}
+.errorMessage {
+    color : #F00;
+    font-weight:bold;
+}
+.checkboxErrorLabel {
+    color : #F00;
+}
+.required {
+    color : #F00;
+}
+
+/*-- --------------------------------------------- --*/
+/*--  public profile styles                               --*/
+/*-- --------------------------------------------- --*/
+
+
+.jive-profile-box {
+    border : 1px #cccccc solid;
+    background-color : #eeeeee;
+    /*-moz-border-radius : 8px;*/
+    /*padding: 7px;*/
+}
+
+.jive-profile-box THEAD TH {
+    background-color: #cccccc;
+    font-size: 14pt;
+    font-weight: bold;
+}
+
+.jive-profile-box THEAD TR {
+    background-color: #cccccc;
+}
+
+.jive-profile-table {
+    border : 0px #fff none;
+    margin-bottom : 1em;
+}
+.jive-profile-table THEAD {
+    padding : 0px;
+}
+.jive-profile-table THEAD TH, .jive-profile-table TBODY TD {
+    font-family : verdana,arial,sans-serif;
+    font-size : 9pt;
+    padding : 3px;
+}
+.jive-profile-table THEAD TH {
+    text-align : left;
+    font-weight : bold;
+    background-color : #eeeeee;
+    border-bottom : 1px #cccccc solid;
+}
+.jive-profile-table TBODY TD {
+    vertical-align : top;
+}
+
+tr.selectedControlPanel {
+    color : #ffffff;
+    background-color : #eeeeee;
+}
+
+/* --------------------------------------------- */
+/*  Styles for the calendar popup                */
+/* --------------------------------------------- */
+
+TABLE.calBgColor {
+    padding : 0px;
+}
+td.cal {
+    font-family : Arial,Helvetica,Sans-serif;
+    font-size : 11px;
+    color : #000000;
+    background-color : #fff;
+    padding : 0px;
+}
+select.month {
+    font-family : Arial,Helvetica,Sans-serif;
+    font-size : 11px;
+    color : #000000;
+    background: transparent;
+    width : 85px;
+}
+input.year {
+    font-family : Arial,Helvetica,Sans-serif;
+    font-size : 11px;
+    color : #000000;
+    background: transparent;
+    width : 30px;
+}
+td.calDaysColor {
+    font-family : Arial,Helvetica,Sans-serif;
+    font-size : 11px;
+    color : #ffffff;
+    background-color : #000000;
+}
+td.calWeekend {
+    font-family : Arial,Helvetica,Sans-serif;
+    font-size : 11px;
+    color : #ffffff;
+    background-color : #d3d3d3;
+}
+td.calBgColor {
+    font-family : Arial,Helvetica,Sans-serif;
+    font-size : 11px;
+    color : #ffffff;
+    background-color : #ffc;
+}
+.calBorderColor {
+    font-family : Arial,Helvetica,Sans-serif;
+    font-size : 11px;
+    color : #ffffff;
+    background-color : #a9a9a9;
+}
+td.calHighlightColor {
+    font-family : Arial,Helvetica,Sans-serif;
+    font-size : 11px;
+    color : #ffffff;
+    background-color : #ffffcc;
+}
+A.cal {
+    font-family : Arial,Helvetica,Sans-serif;
+    font-size : 11px;
+    color : #000000;
+    background: transparent;
+    text-decoration : none;
+}
+A.cal:Hover {
+    font-family : Arial,Helvetica,Sans-serif;
+    font-size : 11px;
+    color : #FF0000;
+    background: transparent;
+    text-decoration : none;
+}
+.calDisabled {
+  font-family : Arial,Helvetica,Sans-serif;
+  font-size : 11px;
+  color : #808080;
+  background: transparent;
+  text-decoration : none;
+}
+
+
+#mainmenu { 
+font-family:????;	
+margin: 0px 0px 0px 0px; 
+padding: 0px 0px 0px 0px; 
+color: #666; 
+height:29px; 
+} 
+
+#mainmenu ul { 
+clear: left; 
+margin: 0px 0px 0px 0px; 
+padding: 0px 0px 0px 0px; 
+border: 0px; 
+list-style-type: none; 
+text-align: center; 
+display:inline;
+} 
+
+#mainmenu li { 
+float: left; 
+display: block; 
+margin: 0px; 
+padding: 0px 0px 0px 4px; 
+text-align: center
+} 
+
+
+#mainmenu li a { 
+padding:0px; 
+text-decoration: none; 
+font-size:14px;
+color:#666666;
+} 
+
+#mainmenu li a:hover { 
+padding:0px; 
+text-decoration: none; 
+font-size:14px;
+color:#000000;
+} 
+
+#mainmenu ul li#current a { 
+	display: block; 
+	width: 70px;
+	height:29px !important;
+	padding-top: 4px; 
+	color: #333;
+	background:#ffffff;
+	border-top: 1px solid #005871;
+	border-right: 1px solid #005871;
+	border-bottom: 0px solid #FFFFFF;
+	border-left: 1px solid #005871;
+} 
+
+
+#mainmenu ul li#wait a { 
+	width: auto;
+	height:29px;
+	padding-top:5px;
+	border-top: 0px solid #2d6500;
+	border-right: 0px solid #2d6500;
+	border-left: 0px solid #2d6500;
+}
+
+#nav{
+	float:right;
+	margin-top:15px;
+	color: #333;
+	font-family:????;	
+	font-size: 12px;
+	background: #FFFFFF url(http://bbs.chinajavaworld.com/templates/default/images/nav_bg.gif);
+}
+
+#topmenu{clear:both;padding:0;margin-top:3px;margin-bottom:3px}
+
+.fr{float:right}
+.fl{float:left}
